@@ -1,0 +1,37 @@
+Step 1: Loading and Cleaning Data...
+Initial count: 1086465
+Removed 66587 duplicate rows,Empty lines,Extra semicolons.
+Step 2: Performing Exploratory Data Analysis...
+Step 3: Preprocessing Data...
+Step 4: Model Selection and Training...
+Subsampling for faster training...
+Training Logistic Regression...
+Logistic Regression Results:
+  - Accuracy: 0.4797
+  - Macro F1-Score: 0.2590 (Primary Metric for Imbalance)
+Training Random Forest...
+Random Forest Results:
+  - Accuracy: 0.6063
+  - Macro F1-Score: 0.5645 (Primary Metric for Imbalance)
+
+Best Model Selection based on F1-Score: Random Forest
+Final Macro F1-Score: 0.5645
+
+Classification Report:
+              precision    recall  f1-score   support
+
+  Downstairs       0.25      0.09      0.13     19478
+     Jogging       0.66      0.66      0.66     59495
+     Sitting       0.98      0.97      0.97     11463
+    Standing       0.81      0.86      0.83      9449
+    Upstairs       0.26      0.09      0.14     23787
+     Walking       0.57      0.76      0.65     80304
+
+    accuracy                           0.61    203976
+   macro avg       0.59      0.57      0.56    203976
+weighted avg       0.56      0.61      0.57    203976
+
+
+All steps completed. Plots saved in 'plots/' directory.
+
+Opening generated plots...
